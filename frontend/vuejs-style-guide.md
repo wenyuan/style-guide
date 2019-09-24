@@ -48,13 +48,23 @@ components/
 ### 2.2 取名规范
 #### 基础组件名
 　　位于 `components` 文件夹下的基础组件。
-* 应该全部以一个特定的前缀开头，比如 `Base`、`App` 或 `V`。 <font size=2>[参考官方文档](https://cn.vuejs.org/v2/style-guide/#%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6%E5%90%8D-%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90)</font>
+* 应该全部以一个特定的前缀开头，比如 `Base`、`App` 或 `V`。[参考官方文档](https://cn.vuejs.org/v2/style-guide/#基础组件名-强烈推荐)
 ```bash
+# 反例
+components/
+|- MyButton.vue
+|- VueTable.vue
+|- Icon.vue
 
+# 好例子
+components/
+|- BaseButton.vue
+|- BaseTable.vue
+|- BaseIcon.vue
 ```
-
-
-`views`文件夹下面是由 **以页面为单位的vue文件** 或者 **模块文件夹** 组成的。
+#### 单例组件名
+　　位于 `views` 文件夹下的组件。<br/>
+　　`views`文件夹下面是由 **以页面为单位的vue文件** 或者 **模块文件夹** 组成的。
 
 
 
