@@ -1,6 +1,10 @@
 # Vue.js编码规范
 > 来源：[Vue.js官方风格指南](https://cn.vuejs.org/v2/style-guide/)
 
+<br/>
+
+　　　[**目录**]()
+
 [1 工程目录安排](#1-工程目录安排)
 
 [2. 文件夹命名规范](#2-文件夹命名规范)
@@ -20,7 +24,7 @@
 　　[4.1 vue 方法放置顺序](#41-vue-方法放置顺序)
 
 　　[4.2 prop 名大小写](#42-prop-名大小写)
- vue 方法放置顺序
+
 　　[4.3 method 方法命名](#43-method-方法命名)
 
 　　[4.4 data props 方法注意点](#44-data-props-方法注意点)
@@ -58,6 +62,7 @@ src/
         └── index.vue
 ```
 
+<br/>
 
 ## 2. 文件夹命名规范
 ### 2.1 大小写规范
@@ -87,6 +92,7 @@ components/
 * 如果有两个以上单词，采用 `PascalBase` 风格（例如：`BackToTop`）
 * 最好只有一个单词，特殊情况可例外（good: `Car`，`Order`，`Cart`）（bad: `CarInfo`，`CarPage`）
 
+<br/>
 
 ## 3. `.vue`文件命名规范
 ### 3.1 大小写规范
@@ -189,6 +195,7 @@ components/
 * 常用结尾单词有（`detail`、`edit`、`list`、`info`、`report`）
 * 私有`components`目录下，以 `Item` 结尾的代表着私有组件（`CarListItem`、`CarInfoItem`）
 
+<br/>
 
 ## 4. `.vue`文件内部编程规范
 ### 4.1 vue 方法放置顺序
@@ -233,6 +240,7 @@ props: {
 * 不在 `mounted`、`created` 之类的方法里直接写取异步数据的逻辑，将方法抽象出来，只在此处调用；
 * 在 `created` 里面监听 Bus 事件
 
+<br/>
 
 ## 5. 资源文件命名规范(.js .less等)
 ### 5.1 `.js` 文件命名规范
