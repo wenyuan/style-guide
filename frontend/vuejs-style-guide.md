@@ -13,11 +13,27 @@
 
 　　[2.2 取名规范](#22-取名规范)
 
+　　　　[a. 组件文件夹](#a-组件文件夹)
+
+　　　　[b. 其它文件夹](#b-其它文件夹)
+
 [3. `.vue`文件命名规范](#3-vue文件命名规范)
 
 　　[3.1 大小写规范](#31-大小写规范)
 
 　　[3.2 取名规范](#32-取名规范)
+
+　　　　[a 基础组件名](#a-基础组件名)
+
+　　　　[b 单例组件名](#b-单例组件名)
+
+　　　　[c 紧密耦合的组件名](#c-紧密耦合的组件名)
+
+　　　　[d 组件名中的单词顺序](#d-组件名中的单词顺序)
+
+　　　　[e 组件名使用完整单词](#e-组件名使用完整单词)
+
+　　　　[f 页面/视图文件名](#f-页面视图文件名)
 
 [4. `.vue`文件内部编程规范](#4-vue文件内部编程规范)
 
@@ -85,12 +101,49 @@ components/
         └── mimes.js
 ```
 ### 2.2 取名规范
-#### 组件文件夹
-　　位于 `components` 下的文件夹。
+#### a. 组件文件夹
+　　位于 `components` 下的直接子文件夹。
 * 代表着这类模块的类别；
 * 由名词组成（例如：`Charts`）
 * 如果有两个以上单词，采用 `PascalBase` 风格（例如：`BackToTop`）
 * 最好只有一个单词，特殊情况可例外（good: `Car`，`Order`，`Cart`）（bad: `CarInfo`，`CarPage`）
+#### b. 其它文件夹
+　　`view` 下的文件夹，间接位于 `components` 下的子文件夹，和其它文件夹。
+* 代表着页面的名字，或者类名；
+* 由名词组成（例如：`profile`）
+* 如果有两个以上单词，采用 `kebab-case` 的风格，（例如：`error-page`）
+
+　　例如[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/tree/master/src)中：
+```bash
+src/
+├── App.vue
+├── assets
+├── main.js
+├── components
+│   ├── BackToTop             # 组件文件夹
+│   └── Charts                # 组件文件夹
+│       ├── Keyboard.vue
+│       ├── LineMarker.vue
+│       ├── MixChart.vue
+│       └── mixins            # 其它文件夹（间接位于 `components` 下的子文件夹）
+├── directive
+│   ├── clipboard             # 其它文件夹
+│   └── permission            # 其它文件夹
+├── filters
+└── views
+    ├── charts                # 其它文件夹（页面文件夹）
+    ├── clipboard             # 其它文件夹（页面文件夹）
+    ├── dashboard             # 其它文件夹（页面文件夹）
+    │   ├── admin             # 其它文件夹（页面文件夹）
+    │   │   ├── components
+    │   │   └── index.vue
+    │   ├── editor            # 其它文件夹（页面文件夹）
+    │   │   └── index.vue
+    │   └── index.vue
+    └── error-page            # 其它文件夹（页面文件夹）
+        ├── 401.vue
+        └── 404.vue
+```
 
 <br/>
 
@@ -100,7 +153,7 @@ components/
 * 其它地方的组件名采用 `kebab-case` 的风格。
 
 ### 3.2 取名规范
-#### 基础组件名
+#### a. 基础组件名
 　　位于 `components` 文件夹下的基础组件。
 * 应该全部以一个特定的前缀开头，比如 `Base`、`App` 或 `V`。[参考官方文档](https://cn.vuejs.org/v2/style-guide/#基础组件名-强烈推荐)
 ```bash
@@ -116,7 +169,7 @@ components/
 |- BaseTable.vue
 |- BaseIcon.vue
 ```
-#### 单例组件名
+#### b. 单例组件名
 　　位于 `components` 文件夹下的组件，这类组件在每个页面只使用一次，永远不接受任何 prop，是为你的应用定制的。
 * 以 `The` 前缀命名，以示其唯一性。[参考官方文档](https://cn.vuejs.org/v2/style-guide/#单例组件名-强烈推荐)
 ```bash
@@ -130,7 +183,7 @@ components/
 |- TheHeading.vue
 |- TheSidebar.vue
 ```
-#### 紧密耦合的组件名
+#### c. 紧密耦合的组件名
 　　位于 `components` 文件夹下的组件，该类组件只在某个父组件的场景下有意义，这层关系应该体现在其名字上。因为编辑器通常会按字母顺序组织文件，所以这样做可以把相关联的文件排在一起。
 * 以父组件名作为前缀命名。[参考官方文档](https://cn.vuejs.org/v2/style-guide/#紧密耦合的组件名-强烈推荐)
 ```bash
@@ -144,7 +197,7 @@ components/
 |- SearchSidebar.vue
 |- SearchSidebarNavigation.vue
 ```
-#### 组件名中的单词顺序
+#### d. 组件名中的单词顺序
 　　位于 `components` 文件夹下的组件。[参考官方文档](https://cn.vuejs.org/v2/style-guide/#组件名中的单词顺序-强烈推荐)
 * 组件名应该以高级别的 (通常是一般化描述的) 单词开头，以描述性的修饰词结尾。
 * **官网的描述比较抽象，什么叫“高级别”的呢，直接看例子**：
@@ -168,7 +221,7 @@ components/
 |- SettingsCheckboxLaunchOnStartup.vue
 ```
 　　因为编辑器通常会按字母顺序组织文件，所以现在组件之间的重要关系一目了然。
-#### 组件名使用完整单词
+#### e. 组件名使用完整单词
 * 组件名应该倾向于完整单词而不是缩写，这样便于团队合作与后期维护。[参考官方文档](https://cn.vuejs.org/v2/style-guide/#完整单词的组件名-强烈推荐)
 ```bash
 # 反例
@@ -181,7 +234,7 @@ components/
 |- StudentDashboardSettings.vue
 |- UserProfileOptions.vue
 ```
-#### 页面/视图文件名
+#### f. 页面/视图文件名
 　　位于 `views` 文件夹下的`.vue`文件。<br/>
 　　`views` 文件夹下面是由 **以页面为单位的vue文件** 或者 **模块文件夹** 组成的。
 * `views` 目录下面的 `.vue` 文件代表着页面的名字；
