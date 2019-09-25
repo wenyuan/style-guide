@@ -5,10 +5,12 @@
 * vue.js项目
 * 基于vue-cli3构建
 
+<br/>
 
 ## 2. 代码风格标准
-######　　ESLint + Prettier
+###### ESLint + Prettier
 
+<br/>
 
 ## 3. 定制化调整
 ### 3.1 规则
@@ -67,3 +69,8 @@ module.exports = {
 ### 3.3 IDE代码自动格式化配置
 　　WebStorm配置方式参考：[我的博客-WebStorm配置代码格式化](https://www.wenyuanblog.com/blogs/webstorm-eslint-prettier-reformat-code.html) <br/>
 　　注意：不同版本下的WebStorm可能会略有不同。
+
+<br/>
+<br/>
+
+###### 最后一次更新：2019-09-25
