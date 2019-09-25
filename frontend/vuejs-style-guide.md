@@ -1,6 +1,13 @@
 # Vue.js编码规范
 > 来源：[Vue.js官方风格指南](https://cn.vuejs.org/v2/style-guide/)
 
+[1 工程目录安排](#1. 工程目录安排)
+[2. 文件夹命名规范](#2. 文件夹命名规范)
+　　[2.1 大小写规范](#2.1 大小写规范)
+　　[2.2 取名规范](#2.2 取名规范)
+[3. `.vue`文件命名规范](#2. `.vue`文件命名规范)
+
+
 ## 1. 工程目录安排
 * 全局通用的组件放在 `/src/components/` 下；
 * 页面/视图放在 `/src/views/` 下；
@@ -192,11 +199,11 @@ props: {
 * 尽量使用常用单词开头（例如`set`、`get`、`open`、`close`、`jump`）
 * 驼峰命名（good: `getListData`）（bad: `get_list_data`、`getlistData`）
 
-#### 4.4 data props 方法注意点
+### 4.4 data props 方法注意点
 * 使用 `data` 里的变量时请先在 `data` 里面初始化；
 * `props` 指定类型，也就是 `type`；
 
-#### 4.5 生命周期方法注意点
+### 4.5 生命周期方法注意点
 * 不在 `mounted`、`created` 之类的方法里直接写取异步数据的逻辑，将方法抽象出来，只在此处调用；
 * 在 `created` 里面监听 Bus 事件
 
