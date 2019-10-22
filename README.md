@@ -14,6 +14,11 @@
 :construction_worker: <br/>
 TODO...
 
+
+## 版本管理
+- [Git提交信息规范](https://www.wenyuanblog.com/blogs/git-commit-message.html) <sub>`2019`</sub><sub>`已完成`</sub>
+
+
 ## 黄金定律
 　　永远遵循同一套编码规范 -- 可以是这里列出的，也可以是你自己总结的。如果你发现本规范中有任何错误，敬请指正。通过 [提交Issues](https://github.com/winyuan/style-guide/issues/new) 为本规范贡献力量。
 ```bash
