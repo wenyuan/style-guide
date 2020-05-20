@@ -281,7 +281,7 @@ props: {
 ### 4.3 method 方法命名
 * 动宾短语（good：`jumpPage`、`openCarInfoDialog`）（bad：`go`、`nextPage`、`show`、`open`、`login`）
 * ajax 方法以 `get`、`post` 开头，以 `data` 结尾（good：`getListData`、`postFormData`）（bad：`takeData`、`confirmData`、`getList`、`postForm`）
-* 事件方法以 `on` 开头（例如：`onTypeChange`、`onUsernameInput`）
+* 事件方法以 `on` 或者 `handle` 开头（例如：`onTypeChange`、`onUsernameInput`、`handleTypeChange`）
 * `init`、`refresh` 单词除外
 * 尽量使用常用单词开头（例如`set`、`get`、`open`、`close`、`jump`）
 * 驼峰命名（good: `getListData`）（bad: `get_list_data`、`getlistData`）
@@ -306,4 +306,4 @@ props: {
 <br/>
 <br/>
 
-###### 最后一次更新：2019-09-25
+###### 最后一次更新：2020-05-20
