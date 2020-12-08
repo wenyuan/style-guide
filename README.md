@@ -1,7 +1,11 @@
 [![Style Guide Logo](/img/logo.png)](https://www.wenyuanblog.com)
 
 # Style Guide
-　　根据国内大厂开发规范整理的代码风格指南（附来源）。
+
+根据国内大厂开发规范整理的代码风格指南（附来源）。
+
+> 为增加可读性，本仓库已并入 [前端修炼小册](https://github.com/wenyuan/fedbook) 仓库。  
+> [在线预览](https://fedbook.cn/)
 
 ## 前端
 - [HTML编码规范](/frontend/html-style-guide.md) <sub>`2019`</sub><sub>`已完成`</sub>
