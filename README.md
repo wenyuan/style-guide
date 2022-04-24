@@ -24,7 +24,7 @@ TODO...
 
 
 ## 黄金定律
-　　永远遵循同一套编码规范 -- 可以是这里列出的，也可以是你自己总结的。如果你发现本规范中有任何错误，敬请指正。通过 [提交Issues](https://github.com/winyuan/style-guide/issues/new) 为本规范贡献力量。
+永远遵循同一套编码规范 -- 可以是这里列出的，也可以是你自己总结的。如果你发现本规范中有任何错误，敬请指正。通过 [提交Issues](https://github.com/winyuan/style-guide/issues/new) 为本规范贡献力量。
 ```bash
   不管有多少人共同参与同一项目，一定要确保每一行代码都像是同一个人编写的。
 ```
