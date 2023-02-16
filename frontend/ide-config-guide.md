@@ -67,8 +67,7 @@ module.exports = {
 ```
 
 ### 3.3 IDE代码自动格式化配置
-　　WebStorm配置方式参考：[我的博客-WebStorm配置代码格式化](https://www.wenyuanblog.com/blogs/webstorm-eslint-prettier-reformat-code.html) <br/>
-　　注意：不同版本下的WebStorm可能会略有不同。
+注意：不同版本下的WebStorm可能会略有不同。
 
 <br/>
 <br/>
