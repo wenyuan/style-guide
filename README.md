@@ -1,5 +1,3 @@
-[![Style Guide Logo](/img/logo.png)](https://www.wenyuanblog.com)
-
 # Style Guide
 
 根据国内大厂开发规范整理的代码风格指南（附来源）。
@@ -20,7 +18,7 @@ TODO...
 
 
 ## 版本管理
-- [Git提交信息规范](https://www.wenyuanblog.com/blogs/git-commit-message.html) <sub>`2019`</sub><sub>`已完成`</sub>
+- Git提交信息规范 <sub>`2019`</sub><sub>`已完成`</sub>
 
 
 ## 黄金定律
@@ -37,5 +35,5 @@ TODO...
 <br/>
 <br/>
 
-###### 如有疑义可以提交Issues。欢迎Star，欢迎Fork，欢迎PR。
+###### 如有疑义可以提交Issues。
 ###### 最后一次更新：2019-09-25
